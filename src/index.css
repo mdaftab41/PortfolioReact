@@ -1,0 +1,118 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+/**
+.App{
+    background-image:url(./component/banner-bg.jpg);
+    background-size:"cover";
+    hight:"100vh";
+   }
+   **/
+
+/* color */
+.bg-primary.active {
+  background: #0F172A;
+  @apply fixed z-10 flex justify-between w-full px-5 py-2 text-white;
+}
+.bg-primary{
+background:transprent;
+@apply fixed z-10 flex justify-between w-full px-5 py-2 text-white;
+}
+
+.bg-secondery {
+  background: #1E293B;
+}
+
+.bg-accent {
+  background: #7477FF;
+}
+
+.text-accent {
+  color: #7477FF;
+  width:auto;
+} 
+/*navbar*/
+.mobile-nav {
+  @apply block md:hidden fixed top-10 py-2 w-full h-full bg-gray-900 duration-500;
+} 
+
+nav li a {
+  @apply px-4 py-5 text-lg;
+}
+
+nav li a:hover {
+  color: #7477FF;
+  @apply border-2 border-indigo-600 border-double;
+  @apply px-5 py-1 mx-2 bg-white rounded-full;
+}
+/* Image animation*/
+.movearrow {
+  animation-name : mymove;
+  animation-iteration-count : infinite;
+  animation-direction : alternate;
+  animation-duration : 1s;
+}
+
+@keyframes mymove {
+  from {transform: translatey(0px);}
+  to {transform: translatey(30px);}
+}
+/* home css*/
+h1 {
+    font-family: 'Pacifico', cursive;
+    line-height: 1.5 !important;
+    }
+
+/**skill and home position**/
+.skill-1{
+position:absolute;
+z-index:2;
+margin-top: 760px;
+ width:100%;
+ 
+}
+.home-1{
+position:absolute;
+z-index:1;
+background-image:url(./component/banner-bg.jpg);
+width:100%;
+ 
+}
+/** About Section  **/
+.about{
+  margin:40px 400px;
+  font-size:5rem;
+  color: linear-gradient(90deg, rgb(154, 59, 218) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.about-info{
+    margin:10px 320px;
+  }
+
+
+@media (max-width: 600px) {
+  .about{
+  margin:20px 10px;
+  font-size:3rem;
+  }
+  .about-info{
+    margin:10px;
+  }
+  }
+  /**skill section**/
+  .bar{
+    padding-top:1150px;
+  }
+/* Form css */
+input[type="text"]:focus ~ .input-text{
+      @apply text-blue-500 bg-white transform -translate-y-9 -translate-x-0 ;
+}
+.unfilled .input-text {
+  @apply text-blue-500 bg-white transform -translate-y-9 -translate-x-0;
+}
+
+ 
+
+ 
