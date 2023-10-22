@@ -9,19 +9,38 @@ function Form() {
     email: "",
     message: "",
   });
-  const [filled, setFilled] = useState(false);
+  //const [filled, setFilled] = useState(false);
+  const [filled, setFilled] = useState({
+    fName: false,
+    lName: false,
+    email: false,
+    message: false,
+  });
   const [error, setError] = useState({});
 
-  function handleChange(event) {
-    const newObj = { ...contact, [event.target.name]: event.target.value };
-    setContact(newObj);
-    if (Object.values(newObj).some(value => value.trim() !== '')) {
-      setFilled(true);
+  // function handleChange(event) {
+  //   const newObj = { ...contact, [event.target.name]: event.target.value };
+  //   setContact(newObj);
+  //   if (Object.values(newObj).some(value => value.trim() !== '')) {
+  //     setFilled(true);
+  //   } else {
+  //     setFilled(false);
+  //   }
+  // }
+   
+  function handleChange(event, fieldName) {
+    const updatedContact = { ...contact, [fieldName]: event.target.value };
+    setContact(updatedContact);
+
+    // Only update filled state if the input value is not empty
+    if (event.target.value.trim() !== '') {
+      setFilled(prevState => ({ ...prevState, [fieldName]: true }));
     } else {
-      setFilled(false);
+      setFilled(prevState => ({ ...prevState, [fieldName]: false }));
     }
   }
-
+  
+  
   function handleValidation(event) {
     event.preventDefault();
     const validationErrors = Validation(contact);
@@ -37,11 +56,13 @@ function Form() {
   return (
     <div className="pt-5 bg-yellow-50">
       <form className="" onSubmit={handleValidation}>
-        <div className="px-10 py-5 mx-10 my-5 bg-white border border-black input-container shadow-md shadow-black rounded-lg">
+        <div className="px-10 py-5 mx-10 my-5 bg-white border border-black rounded-lg shadow-md input-container shadow-black">
           
-          <label className=   {`relative ${filled ? "unfilled" : ""}`}>
+          <label className=   {`relative ${ filled.fName ? "unfilled" : ""}`}>
             <input
-            onChange={handleChange}
+            onChange={(event) => handleChange(event, "fName")}
+            //onChange={handleChange}
+            value={contact.firstName}
             name="fName"
             title="First Name"
             type="text"
@@ -51,10 +72,11 @@ function Form() {
           {error.fName && <p style={{ color: "red" }}>{error.fName}</p>}
           </label>
         </div>
-        <div className="px-10 py-5 mx-10 my-5 bg-white border border-black shadow-md shadow-black rounded-lg">
-          <label className=   {`relative ${filled ? "unfilled" : ""}`}> 
+        <div className="px-10 py-5 mx-10 my-5 bg-white border border-black rounded-lg shadow-md shadow-black">
+          <label className=   {`relative ${filled.lName ? "unfilled" : ""}`}> 
           <input
-            onChange={handleChange}
+            //onChange={handleChange}
+            onChange={(event) => handleChange(event, "lName")}
             name="lName"
             title="Last Name"
             type="text"
@@ -64,10 +86,11 @@ function Form() {
           {error.lName && <p style={{ color: "red" }}>{error.lName}</p>}
           </label>
         </div>
-        <div className="px-10 py-5 mx-10 my-5 bg-white border border-black shadow-md shadow-black rounded-lg">
-          <label className=   {`relative ${filled ? "unfilled" : ""}`}>
+        <div className="px-10 py-5 mx-10 my-5 bg-white border border-black rounded-lg shadow-md shadow-black">
+          <label className=   {`relative ${filled.email ? "unfilled" : ""}`}>
           <input
-            onChange={handleChange}
+            //onChange={handleChange}
+            onChange={(event) => handleChange(event, "email")}
             name="email"
             title="Email"
             type="text"
@@ -78,14 +101,15 @@ function Form() {
           </div>}
           </label>
         </div>
-        <div className="px-10 py-5 mx-10 my-5 bg-white border border-black shadow-md shadow-black rounded-lg">
-          <label className=   {`relative ${filled ? "unfilled" : ""}`}> 
+        <div className="px-10 py-5 mx-10 my-5 bg-white border border-black rounded-lg shadow-md shadow-black">
+          <label className=   {`relative ${filled.message ? "unfilled" : ""}`}> 
           <input
-            onChange={handleChange}
-            name="massage"
+            //onChange={handleChange}
+            onChange={(event) => handleChange(event, "massage")}
+            name="message"
             title="Write Massage"
             type="text"
-            className=" border-b-2 focus:outline-none focus:border-sky-500 w-96 overflow-auto h-fit"
+            className="overflow-auto border-b-2 focus:outline-none focus:border-sky-500 w-96 h-fit"
           />
           <span className="absolute top-0 left-0 transition duration-200 input-text"> Write Massage</span>
           {error.massage && <p style={{ color: "red" }}>{error.massage}</p>}
