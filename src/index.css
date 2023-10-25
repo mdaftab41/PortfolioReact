@@ -81,7 +81,7 @@ margin-top: 0px;
 }
 /** About Section  **/
 .about{
-   
+  text-align: center !important;
   font-size:5rem;
   background-clip: text;
   -webkit-background-clip: text;
@@ -89,19 +89,6 @@ margin-top: 0px;
   background-image: linear-gradient(90deg, rgb(154, 59, 218) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   
 }
- 
-   
-
-
-
-  /**skill section**/
-   
-   
-
-
-
-
-
 
 
 /* Form css */
@@ -110,6 +97,55 @@ input[type="text"]:focus ~ .input-text{
 }
 .unfilled .input-text {
   @apply text-blue-500 bg-white transform -translate-y-9 -translate-x-0;
+}
+
+/* social icon color */
+.social-container a.facebook .fa-facebook {
+  color: #3b5998;  
+}
+
+/*.social-container a.instagram .fa-instagram {
+  color: #f9ce34, #ee2a7b, #6228d7;  
+}*/
+
+.social-container a.github .fa-github {
+  color: #211f1f;  
+}
+
+.social-container a.linkedin .fa-linkedin {
+  color: #0A66C2;  
+}
+/*#gram{
+  width: 29px; 
+  height: 30px;
+  border-radius: 30%;
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}*/
+.insta-icon {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 20%;
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf)
+}
+.insta-icon:after,
+.insta-icon:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #fff;
+  transform: translate(-50%, -50%);
+  content: ''
+}
+.insta-icon:before {
+  border-radius: 20%
+}
+.insta-icon:after {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%
 }
 
  

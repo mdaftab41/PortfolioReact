@@ -20,7 +20,7 @@ function Home(){
               Hi, I am <TypeWriter texts={data}  className="pt-0 text-accent"/> 
               
             </h1>
-            <p className="pt-10 pb-10">
+            <p className="pt-10 pb-10 font-mono text-xl">
               I am proficient in JavaScript, React.js and Tailwind CSS
             </p>
             <div  data-aos="zoom-in-right"
