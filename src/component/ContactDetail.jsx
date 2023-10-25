@@ -1,38 +1,47 @@
-import React from "react";
+import React,{useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram ,    faGithub,faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook,     faGithub,faLinkedin,envelope } from "@fortawesome/free-brands-svg-icons";
 
 function ContactDetail() {
+   
+    useEffect(() => {
+      AOS.init({
+        duration: 1000
+      });
+  });
   return (
-    <div className="mx-40">
-      <h1>
+    <div className="mx-10">
+      <h1 className="font-mono" data-aos="fade-left">
         I am currently open for a fulltime Frontend Developer role. If you want
         to discuss about that feel free to email me or call me.
       </h1>
-      <h1>  Email:mdaftabalam49041@gmail.com</h1>
-      <h1> mh3473@srmist.edu.in</h1>
-      <h1>  Mobile Number: 7352205782</h1>
-      <div class="social-container">
-        <h3>Social Follow</h3>
+      <h1 className="font-serif" data-aos="fade-left">  Email:mdaftabalam49041@gmail.com</h1>
+      <h1 className="ml-12 font-serif"> mh3473@srmist.edu.in</h1>
+      <h1 className="font-serif" data-aos="fade-left">  Mobile Number: 7352205782</h1>
+      <div class="social-container flex justify-around pt-10 md:mx-20" data-aos="zoom-in">
       <a href="https://www.facebook.com/profile.php?id=100020936580838"
-        className="facebook social">
+        className=" facebook social">
         <FontAwesomeIcon icon={faFacebook} size="2x" />
     </a>
       <a href="https://instagram.com/aftab9631?igshid=OGQ5ZDc2ODk2ZA=="
-        className="instagram social" >
-        <FontAwesomeIcon icon={faInstagram} size="2x" />
+        className="instagram social insta-icon" id="gram">
+         
     </a>
-      <a href="https://instagram.com/aftab9631?igshid=OGQ5ZDc2ODk2ZA=="
-        className="instagram social">
+      <a href=" https://github.com/mdaftab41"
+        className="Github social"  >
         <FontAwesomeIcon icon={ faGithub} size="2x" />
       </a>
-      <a href="https://instagram.com/aftab9631?igshid=OGQ5ZDc2ODk2ZA=="
-        className="instagram social">
+      <a href="https://www.linkedin.com/in/md-aftab-alam-1bba22237/"
+        className="linkedin social">
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
       </a>
       </div>
     </div>
   );
 }
+ 
 
 export default ContactDetail;
+//<FontAwesomeIcon icon={faInstagram} size="2x" />
