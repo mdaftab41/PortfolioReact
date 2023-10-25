@@ -4,7 +4,7 @@ import TypeWriter from "./typewriter";
 import data from "./Data";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
- 
+import {  BsArrowDownSquareFill } from "react-icons/bs";
 
 
 
@@ -25,18 +25,19 @@ function Home(){
             </p>
             <div  data-aos="zoom-in-right"
             data-aos-duration="2500"
-             > 
+              > 
+              
             <a
-              href="  "
+              href=" https://github.com/mdaftab41?tab=repositories "
               className=" btn bg-accent  border-2 border-[#7477FF] text-white px-6 py-3 hover:bg-transparent m-3 rounded-xl"
             >
               See Projects
             </a>
             <a
               href="/#projects"
-              className=" btn bg-accent  border-2 border-[#7477FF] text-white px-6 py-3 hover:bg-transparent m-3 rounded-xl"
+              className="px-6 py-3    text-white download-btn bg-accent hover:bg-transparent rounded-xl m-3 border-2 border-[#7477FF]   md:w-full"
             >
-              Resume
+            Download Resume
             </a>
             </div>
           </div>

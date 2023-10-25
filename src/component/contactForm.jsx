@@ -59,7 +59,7 @@ function Form() {
             name="fName"
             title="First Name"
             type="text"
-            className="transition duration-200 border-b-2 focus:outline-none focus:border-sky-500 invalid:border-pink-500 lg:w-96"
+            className="w-full transition duration-200 border-b-2 focus:outline-none focus:border-sky-500 invalid:border-pink-500"
           />
           <span className="absolute top-0 left-0 transition duration-200 input-text">First Name</span>
           {error.fName && <p style={{ color: "red" }}>{error.fName}</p>}
@@ -73,7 +73,7 @@ function Form() {
             name="lName"
             title="Last Name"
             type="text"
-            className="border-b-2 focus:outline-none focus:border-sky-500 lg:w-96"
+            className="w-full border-b-2 focus:outline-none focus:border-sky-500"
           />
           <span className="absolute top-0 left-0 transition duration-200 input-text">Last Name</span>
           {error.lName && <p style={{ color: "red" }}>{error.lName}</p>}
@@ -87,7 +87,7 @@ function Form() {
             name="email"
             title="Email"
             type="text"
-            className="border-b-2 focus:outline-none focus:border-sky-500 lg:w-96"
+            className="w-full border-b-2 focus:outline-none focus:border-sky-500"
           />
           <span className="absolute top-0 left-0 transition duration-200 input-text"> Email</span>
           {error.email && <div><p style={{ color: "red" }}>{error.email}</p>
@@ -102,7 +102,7 @@ function Form() {
             name="message"
             title="Write Message"
             type="text"
-            className="overflow-auto border-b-2 focus:outline-none focus:border-sky-500 lg:w-96 h-fit"
+            className="w-full overflow-auto border-b-2 focus:outline-none focus:border-sky-500 h-fit"
           />
           <span className="absolute top-0 left-0 transition duration-200 input-text"> Write Message</span>
           {error.message && <p style={{ color: "red" }}>{error.message}</p>}
