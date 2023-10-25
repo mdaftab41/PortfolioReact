@@ -2,12 +2,12 @@ import React from "react";
 
 function About() {
   return ( 
- <section className="mt-0 bg-cyan-900 skill-1" id="about">
+ <section className="mt-0 bg-zinc-950 " id="about">
   <div className="">
-      <h2 className="text-center border-b-4 border-indigo-600 border-dotted about md:mx-52" >
+      <h2 className="text-center border-b-4 border-gray-500 border-dotted about md:mx-48" >
         About Me
       </h2>
-      <div className="text-white mx-80 md:mx-44 about-info"> 
+      <div className="mx-10 text-white md:mx-40 about-info"> 
       <p className="">
         Hi, My Name Is Md Aftab Alam everyone calls me Alam. I am a
         Frontend Developer. I build beautifull websites with React, JavaScript, Css, Bootstrap and

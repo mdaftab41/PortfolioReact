@@ -68,43 +68,42 @@ h1 {
 
 /**skill and home position**/
 .skill-1{
-position:absolute;
-z-index:2;
-margin-top: 760px;
- width:100%;
+  
+margin-top: 0px;
+  
  
 }
 .home-1{
-position:absolute;
-z-index:1;
-background-image:url(./component/banner-bg.jpg);
-width:100%;
- 
+  //background-color: #82a43a;
+//background-image:url(./component/banner-bg.jpg);
+ background-image:url( https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg);
+ background-size: contain;
 }
 /** About Section  **/
 .about{
-  margin:40px 400px;
+   
   font-size:5rem;
-  color: linear-gradient(90deg, rgb(154, 59, 218) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, rgb(154, 59, 218) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  
 }
-.about-info{
-    margin:10px 320px;
-  }
+ 
+   
 
 
-@media (max-width: 600px) {
-  .about{
-  margin:20px 10px;
-  font-size:3rem;
-  }
-  .about-info{
-    margin:10px;
-  }
-  }
+
   /**skill section**/
-  .bar{
-    padding-top:1150px;
-  }
+   
+   
+
+
+
+
+
+
+
 /* Form css */
 input[type="text"]:focus ~ .input-text{
       @apply text-blue-500 bg-white transform -translate-y-9 -translate-x-0 ;
