@@ -27,7 +27,7 @@ function Home(){
             data-aos-duration="2500"
              > 
             <a
-              href="/#projects"
+              href="  "
               className=" btn bg-accent  border-2 border-[#7477FF] text-white px-6 py-3 hover:bg-transparent m-3 rounded-xl"
             >
               See Projects
