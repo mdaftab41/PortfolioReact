@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PortfolioReact.js/static/css/main.a559f3fc.css",
+    "main.js": "/PortfolioReact.js/static/js/main.e6f81a29.js",
+    "static/media/banner-bg.jpg": "/PortfolioReact.js/static/media/banner-bg.9e119d2fa1b0b6eee39c.jpg",
+    "static/media/Aftab-image2.png": "/PortfolioReact.js/static/media/Aftab-image2.5de59344c7f6f2bcb0e0.png",
+    "index.html": "/PortfolioReact.js/index.html",
+    "main.a559f3fc.css.map": "/PortfolioReact.js/static/css/main.a559f3fc.css.map",
+    "main.e6f81a29.js.map": "/PortfolioReact.js/static/js/main.e6f81a29.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a559f3fc.css",
+    "static/js/main.e6f81a29.js"
+  ]
+}
