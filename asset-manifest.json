@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PortfolioReact.js/static/css/main.a559f3fc.css",
-    "main.js": "/PortfolioReact.js/static/js/main.e6f81a29.js",
-    "static/media/banner-bg.jpg": "/PortfolioReact.js/static/media/banner-bg.9e119d2fa1b0b6eee39c.jpg",
-    "static/media/Aftab-image2.png": "/PortfolioReact.js/static/media/Aftab-image2.5de59344c7f6f2bcb0e0.png",
-    "index.html": "/PortfolioReact.js/index.html",
-    "main.a559f3fc.css.map": "/PortfolioReact.js/static/css/main.a559f3fc.css.map",
-    "main.e6f81a29.js.map": "/PortfolioReact.js/static/js/main.e6f81a29.js.map"
+    "main.css": "/PortfolioReact/static/css/main.ff0240cd.css",
+    "main.js": "/PortfolioReact/static/js/main.54528399.js",
+    "static/media/programming.jpg": "/PortfolioReact/static/media/programming.84e337769b6745c2f316.jpg",
+    "static/media/banner-bg.jpg": "/PortfolioReact/static/media/banner-bg.9e119d2fa1b0b6eee39c.jpg",
+    "index.html": "/PortfolioReact/index.html",
+    "main.ff0240cd.css.map": "/PortfolioReact/static/css/main.ff0240cd.css.map",
+    "main.54528399.js.map": "/PortfolioReact/static/js/main.54528399.js.map"
   },
   "entrypoints": [
-    "static/css/main.a559f3fc.css",
-    "static/js/main.e6f81a29.js"
+    "static/css/main.ff0240cd.css",
+    "static/js/main.54528399.js"
   ]
 }
