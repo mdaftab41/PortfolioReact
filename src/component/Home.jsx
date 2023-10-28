@@ -1,5 +1,7 @@
 import React,{useEffect} from "react";
-import Image from "./Aftab-image2.png";
+import Image from "./programming.jpg";
+ 
+
 import TypeWriter from "./typewriter";
 import data from "./Data";
 import AOS from 'aos';
@@ -37,7 +39,7 @@ function Home(){
               href="/#projects"
               className="px-6 py-3    text-white download-btn bg-accent hover:bg-transparent rounded-xl m-3 border-2 border-[#7477FF]   md:w-full"
             >
-            Download Resume
+            Download Resum
             </a>
             </div>
           </div>
@@ -53,6 +55,7 @@ function Home(){
             />
           </div>
         </div>
+         
     </div>
     )
 }
