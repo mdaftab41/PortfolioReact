@@ -78,6 +78,7 @@ margin-top: 0px;
 //background-image:url(./component/banner-bg.jpg);
  background-image:url( https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg);
  background-size: contain;
+ background-size: 100% ;
 }
 /** About Section  **/
 .about{
@@ -147,7 +148,7 @@ input[type="text"]:focus ~ .input-text{
   height: 11px;
   border-radius: 50%
 }
-
  
+
 
  
