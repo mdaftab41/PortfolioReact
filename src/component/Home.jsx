@@ -15,11 +15,11 @@ function Home(){
     AOS.init();
 });
     return(
-    <div className="px-5 pt-32 pb-8 text-white home-1">
+    <div className="px-20 pt-32 pb-8 text-white home-1">
         <div className="container grid items-center justify-center mx-auto md:grid-cols-2 md:justify-between">
           <div className="pb-5 hero-info md:pb-60 md:pt-0"  >
-            <h1 className="text-4xl lg:text-6xl">
-              Hi, I am <TypeWriter texts={data}  className="pt-0 text-accent"/> 
+            <h1 className="text-4xl lg:text-5xl">
+              Hi, I am <TypeWriter texts={data}  className="pt-0 text-accent" /> 
               
             </h1>
             <p className="pt-10 pb-10 font-mono text-xl">
