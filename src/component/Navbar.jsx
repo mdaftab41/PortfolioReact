@@ -28,16 +28,16 @@ const Header = () => {
       <nav className="hidden md:block">
         <ul className="flex">
           <li>
-            <a href=""  >About</a>
+            <a href="About"  >About</a>
           </li>
           <li>
-            <a href=""  >Projects</a>
+            <a href="#projects"  >Projects</a>
           </li>
           <li>
-            <a href=""  >Skill</a>
+            <a href="Skill"  >Skill</a>
           </li>
           <li>
-            <a href=""  >Contact</a>
+            <a href="Content"  >Contact</a>
           </li>
           <li>
             <a href="#resume -link" target="_blank" without rel="noreferrer" className="px-5 py-1 mx-2">
@@ -53,19 +53,19 @@ const Header = () => {
       >
         <ul className="flex flex-col">
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href=""  >Projects</a>
+            <a href="#projects"  >Projects</a>
           </li>
           <li>
-            <a href="">Blog</a>
+            <a href="#BLOg">Blog</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#content">Contact</a>
           </li>
           <li>
-            <a href="">Resume</a>
+            <a href="#resume">Resume</a>
           </li>
         </ul>
       </nav>

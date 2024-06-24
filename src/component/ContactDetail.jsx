@@ -6,8 +6,8 @@ import {
   faFacebook,
   faGithub,
   faLinkedin,
-  envelope,
 } from "@fortawesome/free-brands-svg-icons";
+import { FaInstagram } from 'react-icons/fa';
 
 function ContactDetail() {
   useEffect(() => {
@@ -40,11 +40,16 @@ function ContactDetail() {
         >
           <FontAwesomeIcon icon={faFacebook} size="2x" />
         </a>
-        <a
-          href="https://instagram.com/aftab9631?igshid=OGQ5ZDc2ODk2ZA=="
-          className="instagram social insta-icon"
-          id="gram"
-        ></a>
+        
+          <a
+        href="https://instagram.com/aftab9631?igshid=OGQ5ZDc2ODk2ZA=="
+        className="instagram social insta-icon"
+        id="gram"
+        
+        aria-label="Instagram"
+      >
+        <FaInstagram className="w-0 h-0" />
+      </a>
         <a href=" https://github.com/mdaftab41" className="Github social">
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>

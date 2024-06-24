@@ -5,7 +5,7 @@ import Home from "./component/Home";
 import About from "./component/About";
 import Skill from "./component/skill";
  import Contact from "./component/Contact";
- import Cursor from "./component/cursor";
+ //import Cursor from "./component/cursor";
 function App() {
   return (
     <div className="App">

@@ -6,7 +6,7 @@ import TypeWriter from "./typewriter";
 import data from "./Data";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {  BsArrowDownSquareFill } from "react-icons/bs";
+//import {  BsArrowDownSquareFill } from "react-icons/bs";
 
 
 
