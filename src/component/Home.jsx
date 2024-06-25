@@ -17,17 +17,54 @@ function Home(){
   useEffect(() => {
     AOS.init();
 });
-const onButtonClick = () => {
-   const pdfUrl = "AftabResume.pdf";  
-   const link = document.createElement("a");
-   link.href = pdfUrl;
-   link.download = "AftabResume.pdf";
-  // Append the link to the document body
-  document.body.appendChild(link);
-  link.click();
+// const onButtonClick = () => {
+//    const pdfUrl = "AftabResume.pdf";  
+//    const link = document.createElement("a");
+//    link.href = pdfUrl;
+//    link.download = "AftabResum.pdf";
+//   // Append the link to the document body
+//   document.body.appendChild(link);
+//   link.click();
   
    
-  document.body.removeChild(link);
+//   document.body.removeChild(link);
+//};
+const openPdfInNewTab = () => {
+  const pdfUrl = "AftabResume.pdf"; // Replace with the actual path to your PDF file
+
+  // Open the PDF in a new tab or window
+  const newWindow = window.open(pdfUrl, '_blank');
+
+  // After opening the new tab/window, check if it's loaded and then provide download option
+  if (newWindow) {
+      // Provide a download button or link on your original page
+      const downloadButton = document.createElement("button");
+      downloadButton.textContent = "Download PDF";
+      downloadButton.onclick = () => {
+          // Create a new link element
+          const link = document.createElement("a");
+
+          // Set the href attribute to the PDF URL
+          link.href = pdfUrl;
+
+          // Set the download attribute with the desired file name for the downloaded file
+          link.download = "AftabResume.pdf"; // This is optional, you can change the downloaded file name
+
+          // Append the link to the document body
+          document.body.appendChild(link);
+
+          // Programmatically click the link to start the download
+          link.click();
+
+          // Clean up and remove the link from the document
+          document.body.removeChild(link);
+      };
+
+      // Append the download button to your original page
+      document.body.appendChild(downloadButton);
+  } else {
+      alert("allow");
+  }
 };
     return(
       <div>
@@ -55,7 +92,7 @@ const onButtonClick = () => {
               href="/#projects"
               className="px-6 py-3    text-white download-btn bg-accent hover:bg-transparent rounded-xl m-3 border-2 border-[#7477FF]   md:w-full"
             >
-            <button onClick={onButtonClick}>
+            <button onClick={ openPdfInNewTab}>
             RESUME
         </button>
             </a>
