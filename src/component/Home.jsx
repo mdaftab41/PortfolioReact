@@ -6,6 +6,9 @@ import TypeWriter from "./typewriter";
 import data from "./Data";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+import About from "./About";
+ 
 //import {  BsArrowDownSquareFill } from "react-icons/bs";
 
 
@@ -14,7 +17,20 @@ function Home(){
   useEffect(() => {
     AOS.init();
 });
+const onButtonClick = () => {
+   const pdfUrl = "AftabResume.pdf";  
+   const link = document.createElement("a");
+   link.href = pdfUrl;
+   link.download = "document.pdf";
+  // Append the link to the document body
+  document.body.appendChild(link);
+  link.click();
+  
+   
+  document.body.removeChild(link);
+};
     return(
+      <div>
     <div className="px-20 pt-32 pb-8 text-white home-1">
         <div className="container grid items-center justify-center mx-auto md:grid-cols-2 md:justify-between">
           <div className="pb-5 hero-info md:pb-60 md:pt-0"  >
@@ -39,7 +55,9 @@ function Home(){
               href="/#projects"
               className="px-6 py-3    text-white download-btn bg-accent hover:bg-transparent rounded-xl m-3 border-2 border-[#7477FF]   md:w-full"
             >
-            Download Resum
+            <button onClick={onButtonClick}>
+            RESUME
+        </button>
             </a>
             </div>
           </div>
@@ -55,7 +73,8 @@ function Home(){
             />
           </div>
         </div>
-         
+        </div>
+        <About /> 
     </div>
     )
 }

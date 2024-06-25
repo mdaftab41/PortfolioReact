@@ -1,6 +1,8 @@
 import React,{useEffect} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Skill from "./skill";
+ 
 
 function About() {
   useEffect(() => {
@@ -8,7 +10,7 @@ function About() {
       duration: 1000
     });
 });
-  return ( 
+  return ( <div>
  <section className="mt-0 bg-zinc-950 " id="about">
   <div className="" >
       <h2 className="text-center border-b-4 border-gray-500 border-dotted about md:mx-48" data-aos="flip-left">
@@ -33,7 +35,9 @@ function About() {
       </p>
       </div>
     </div>
-</section>);
+</section>
+ <Skill />
+</div>);
 }
 
 export default About;
