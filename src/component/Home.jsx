@@ -21,7 +21,7 @@ const onButtonClick = () => {
    const pdfUrl = "AftabResume.pdf";  
    const link = document.createElement("a");
    link.href = pdfUrl;
-   link.download = "document.pdf";
+   link.download = "AftabResume.pdf";
   // Append the link to the document body
   document.body.appendChild(link);
   link.click();
