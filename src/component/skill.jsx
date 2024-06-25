@@ -4,6 +4,8 @@ import SkillIcon from "./Skill-icon";
 import Bar from "./Progress";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+  
+ import Contact from "./Contact";
 
 function Skill() {
   useEffect(() => {
@@ -12,6 +14,7 @@ function Skill() {
     });
 });
   return (
+    <div> 
     <div className=" bg-zinc-950 bar">
       <h1 className="text-center border-b-4 border-gray-500 border-dotted about md:mx-48 " data-aos="flip-up">
         Skills
@@ -32,6 +35,8 @@ function Skill() {
         <Bar data-aos="zoom-in"/>
         </div>
       </div>
+      </div>
+      <Contact />
     </div>
   );
 }
