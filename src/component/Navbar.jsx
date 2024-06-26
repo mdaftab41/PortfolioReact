@@ -82,7 +82,7 @@ const Header = () => {
     </Link>
 
     {/* Desktop Nav */}
-    <nav className="hidden md:block">
+    <nav className="hidden sm:block">
       <ul className="flex">
       <li>
           <Link to="/">Home</Link>
@@ -119,7 +119,7 @@ const Header = () => {
     </nav>
 
     {/* Toggle button */}
-    <button onClick={handleToggle} className="block md:hidden">
+    <button onClick={handleToggle} className="block sm:hidden">
       {!toggle ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
     </button>
   </header>
