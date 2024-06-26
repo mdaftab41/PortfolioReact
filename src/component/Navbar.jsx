@@ -90,20 +90,14 @@ const Header = () => {
         <li>
           <Link to="/about">About</Link>
         </li>
-        <li>
-          <Link to="#projects">Projects</Link>
-        </li>
+         
         <li>
           <Link to="/skill">Skill</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
         </li>
-        <li>
-          <a href="#resume -link" target="_blank" rel="noreferrer" className="px-5 py-1 mx-2">
-            Resume
-          </a>
-        </li>
+         
       </ul>
     </nav>
 
@@ -113,18 +107,14 @@ const Header = () => {
         <li>
           <Link to="/about">About</Link>
         </li>
-        <li>
-          <Link to="#projects">Projects</Link>
-        </li>
+         
         <li>
           <Link to="/blog">Blog</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
         </li>
-        <li>
-          <Link to="#resume">Resume</Link>
-        </li>
+         
       </ul>
     </nav>
 
