@@ -140,14 +140,14 @@ input[type="text"]:focus ~ .input-text{
   transform: translate(-50%, -50%);
   content: ''
 }
-.insta-icon:before {
+/* .insta-icon:before {
   border-radius: 20%
 }
 .insta-icon:after {
   width: 11px;
   height: 11px;
   border-radius: 50%
-}
+} */
  
 
 
