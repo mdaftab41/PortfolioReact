@@ -16,7 +16,7 @@ function About() {
       <h2 className="text-center border-b-4 border-gray-500 border-dotted about md:mx-48" data-aos="flip-left">
         About Me
       </h2>
-      <div className="mx-10 text-white md:mx-40 about-info"> 
+      <div className="mx-10 text-white md:mx-10 md:text-2xl lg:mx-36 about-info"> 
       <p className="pt-5 font-serif" data-aos="fade-up">
         Hi, My Name Is Md Aftab Alam everyone calls me Alam. I am a
         Frontend Developer. I build beautifull websites with React, JavaScript, Css, Bootstrap and

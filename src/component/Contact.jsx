@@ -20,7 +20,7 @@ function Contact() {
       <div data-aos="zoom-in">
         <Form  className="w-full text-black ms:px-0 min-w-screen"/>
       </div>
-      <div className="pt-10 pb-28 md:pt-0"  >
+      <div className="pt-10 pb-28 md:pt-0 md:text-xl "  >
         <ContactDetail />
       </div>
     </div>
