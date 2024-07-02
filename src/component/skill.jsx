@@ -26,7 +26,7 @@ function Skill() {
           using the following technical tools and technologies:
         </p>
       </div>
-      <div className="container grid justify-center w-auto h-auto mx-4 bg-white rounded-lg md:grid-cols-2 md:justify-between md:h-auto md:mx-28 lg:mx-30">
+      <div className="container grid justify-center w-auto h-auto mx-4 bg-white rounded-lg md:grid-cols-2 md:justify-between md:h-auto md:mx-28 lg:mx-36">
         <div className="text-black ">
           <h2 className="my-5 font-serif font-bold text-center " data-aos="fade-up">I have experience with these technologies</h2>
           <SkillIcon className="" data-aos="fade-up-right"/>

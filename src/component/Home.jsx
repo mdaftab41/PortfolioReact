@@ -68,7 +68,7 @@ const openPdfInNewTab = () => {
 };
     return(
       <div>
-    <div className="px-5 pt-32 pb-8 text-white home-1">
+    <div className="px-5 pt-32 pb-8 text-white home-1 md:px-20">
         <div className="container grid items-center justify-center mx-auto md:grid-cols-2 md:justify-between">
           <div className="pb-5 hero-info md:pb-60 md:pt-0"  >
             <h1 className="text-4xl lg:text-5xl">
