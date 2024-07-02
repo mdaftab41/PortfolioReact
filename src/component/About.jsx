@@ -11,7 +11,7 @@ function About() {
     });
 });
   return ( <div>
- <section className="mt-0 bg-zinc-950 " id="about">
+ <section className="mx-0 mt-0 bg-zinc-950" id="about">
   <div className="" >
       <h2 className="text-center border-b-4 border-gray-500 border-dotted about md:mx-48" data-aos="flip-left">
         About Me
