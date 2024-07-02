@@ -9,7 +9,7 @@ import Skill from "./component/skill";
  //import Cursor from "./component/cursor";
 function App() {
   return (
-    <div className="App">
+    <div className="w-full mx-auto App">
     <Router>
       <Header />
       <Routes>

@@ -68,14 +68,14 @@ const openPdfInNewTab = () => {
 };
     return(
       <div>
-    <div className="px-5 pt-32 pb-8 text-white home-1 md:px-20">
-        <div className="container grid items-center justify-center mx-auto md:grid-cols-2 md:justify-between">
+    <div className="px-5 pt-32 pb-8 text-white home-1 md:px-10">
+        <div className="container grid items-center justify-center mx-auto md:grid-cols-2 md:justify-between ">
           <div className="pb-5 hero-info md:pb-60 md:pt-0"  >
             <h1 className="text-4xl lg:text-5xl">
               Hi, I am <TypeWriter texts={data}  className="pt-0 text-accent" /> 
               
             </h1>
-            <p className="pt-10 pb-10 font-mono text-xl">
+            <p className="pt-10 pb-10 font-mono text-xl md:text-2xl">
               I am proficient in JavaScript, React.js and Tailwind CSS
             </p>
             <div  data-aos="zoom-in-right"

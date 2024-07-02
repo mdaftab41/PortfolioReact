@@ -16,7 +16,7 @@ function ContactDetail() {
     });
   });
   return (
-    <div className="mx-10">
+    <div className="mx-5">
       <h1 className="font-mono" data-aos="fade-left">
         I am currently open for a fulltime Frontend Developer role. If you want
         to discuss about that feel free to email me or call me.
@@ -30,8 +30,9 @@ function ContactDetail() {
         {" "}
         Mobile Number: 7352205782
       </h1>
+      <div className="">
       <div
-        class="social-container flex justify-around pt-10 md:mx-20"
+        class="social-container flex justify-around pt-10 md:mx-4 lg:mx-20"
         data-aos="zoom-in"
       >
         <a
@@ -59,6 +60,7 @@ function ContactDetail() {
         >
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
+        </div>
       </div>
     </div>
   );
