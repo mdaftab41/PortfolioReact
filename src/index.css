@@ -90,6 +90,12 @@ margin-top: 0px;
   background-image: linear-gradient(90deg, rgb(154, 59, 218) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   
 }
+@media (max-width: 600px) {
+  .about {
+    text-align: center !important;
+    font-size: 3rem;  
+  }
+}
 
 
 /* Form css */
