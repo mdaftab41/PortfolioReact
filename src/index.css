@@ -82,6 +82,7 @@ margin-top: 0px;
 }
 /** About Section  **/
 .about{
+  margin:auto;
   text-align: center !important;
   font-size:5rem;
   background-clip: text;

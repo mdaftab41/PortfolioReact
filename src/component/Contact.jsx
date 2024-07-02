@@ -11,15 +11,16 @@ function Contact() {
     });
 });
   return (
-    <div className="mx-0 text-white bg-gray-900"> 
-    <h className="mx-auto border-b-4 border-gray-500 border-dotted about md:mx-40 lg:mx-80" data-aos="fade-in">
-    Contact Me
-  </h>
+    <div className="min-h-screen mx-0 text-white bg-gray-900"> 
+    <h1 className="mx-auto text-center border-b-4 border-gray-500 border-dotted about" data-aos="fade-in">
+  Contact Me
+</h1>
+
     <div className="grid items-center justify-center mx-auto md:grid-cols-2 md:justify-between lg:mx-20">
       <div data-aos="zoom-in">
-        <Form  className="text-black ms:px-0 min-w-screen"/>
+        <Form  className="w-full text-black ms:px-0 min-w-screen"/>
       </div>
-      <div className="pt-10 pb-20 md:pt-0"  >
+      <div className="pt-10 pb-28 md:pt-0"  >
         <ContactDetail />
       </div>
     </div>
