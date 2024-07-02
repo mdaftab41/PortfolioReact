@@ -108,7 +108,7 @@ function Form() {
           {error.message && <p style={{ color: "red" }}>{error.message}</p>}
           </label>
         </div>
-        <div className="ml-10">
+        <div className="mx-10">
           <button className="px-4 py-2 mb-1 mr-1 text-lg font-bold text-white uppercase transition-all duration-150 ease-linear rounded shadow outline-none active:bg-emerald-600 hover:shadow-md focus:outline-none bg-rose-700">
             Submit
           </button>
