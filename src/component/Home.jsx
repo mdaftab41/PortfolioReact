@@ -15,7 +15,9 @@ import About from "./About";
 
 function Home(){
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 1000
+    });
 });
 // const onButtonClick = () => {
 //    const pdfUrl = "AftabResume.pdf";  
@@ -68,10 +70,10 @@ const openPdfInNewTab = () => {
 };
     return(
       <div>
-    <div className="px-0 pt-32 pb-8 text-white home-1 md:px-10 lg:mx-0">
+    <div className="px-5 pb-8 text-white pt-28 home-1 md:px-8 ">
         <div className="container grid items-center justify-center mx-auto md:grid-cols-2 md:justify-between ">
-          <div className="pb-5 hero-info md:pb-60 md:pt-0"  >
-            <h1 className="text-4xl lg:text-5xl">
+          <div className="pb-5 hero-info md:pb-28 md:pt-0"  >
+            <h1 className="text-3xl lg:text-5xl">
               Hi, I am <TypeWriter texts={data}  className="pt-0 text-accent" /> 
               
             </h1>
@@ -99,7 +101,7 @@ const openPdfInNewTab = () => {
             </div>
           </div>
   
-          <div className="pb-0" data-aos="fade-left"
+          <div className="px-3 pb-0 " data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="2500"
           >

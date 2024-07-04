@@ -26,12 +26,12 @@ function Skill() {
           using the following technical tools and technologies:
         </p>
       </div>
-      <div className="container grid justify-center w-auto h-auto mx-auto bg-wahite rounuded-lg md:grid-cols-2 md:justify-between md:h-auto md:mx-auto lg:mx-36">
+      <div className="container grid justify-center w-auto h-auto mx-auto bg-white rounuded-lg md:grid-cols-2 md:justify-between md:h-auto md:mx-auto lg:mx-36">
         <div className="text-black ">
           <h2 className="my-5 font-serif font-bold text-center " data-aos="fade-up">I have experience with these technologies</h2>
           <SkillIcon className="" data-aos="fade-up-right"/>
         </div>
-        <div className="w-auto mx-2 text-black" data-aos="fade-left">
+        <div className="w-auto mx-2 text-black"  data-aos="zoom-in">
         <Bar data-aos="zoom-in"/>
         </div>
       </div>
