@@ -17,16 +17,16 @@ function ContactDetail() {
   });
   return (
     <div className="mx-5">
-      <h1 className="font-mono" data-aos="fade-left">
+      <h1 className="font-mono" data-aos="fade-up">
         I am currently open for a fulltime Frontend Developer role. If you want
         to discuss about that feel free to email me or call me.
       </h1>
-      <h1 className="font-serif" data-aos="fade-left">
+      <h1 className="font-serif" data-aos="fade-up">
         {" "}
         Email:mdaftabalam49041@gmail.com
       </h1>
       <h1 className="ml-12 font-serif"> mh3473@srmist.edu.in</h1>
-      <h1 className="font-serif" data-aos="fade-left">
+      <h1 className="font-serif" data-aos="fade-up">
         {" "}
         Mobile Number: 7352205782
       </h1>
