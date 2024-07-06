@@ -1,26 +1,23 @@
 import * as React from "react";
 import { useState } from "react";
 import Validation from "./Validation";
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+ 
+
+
 
 function Form() {
   const [contact, setContact] = useState({
     fName: "",
-    lName: "",
     email: "",
     message: "",
   });
   const [filled, setFilled] = useState(false);
   const [error, setError] = useState({});
 
-  /*function handleChange(event) {
-    const newObj = { ...contact, [event.target.name]: event.target.value };
-    setContact(newObj);
-    if (Object.values(newObj).some(value => value.trim() !== '')) {
-      setFilled(true);
-    } else {
-      setFilled(false);
-    }
-  }*/
+   
   function handleChange(event, fieldName) {
     const updatedContact = { ...contact, [fieldName]: event.target.value };
     setContact(updatedContact);
@@ -47,44 +44,56 @@ function Form() {
     }
   }
 
+  
+  //Email js  code 
+const form = useRef();
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm('service_w3zy7b6', ' template_9bbhio2', form.current, {
+      publicKey: 'he7k4upntRG-ks2PZ',
+    })
+    .then(
+      () => {
+        console.log('SUCCESS!');
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+      },
+    );
+  };
+
+  
+
+  
+
   return (
     <div className="pt-5 text-black">
-      <form className="" onSubmit={handleValidation}>
+    <form className="" ref={form} onSubmit={(e) => { handleValidation(e); sendEmail(e); }}>
         <div className="px-10 py-5 mx-10 my-5 bg-white border border-black rounded-lg shadow-md input-container shadow-black">
           
           <label className=   {`relative ${filled.fName ? "unfilled" : ""}`}>
             <input
             //onChange={handleChange}
             onChange={(event) => handleChange(event, "fName")}
-            name="fName"
-            title="First Name"
+            name="from_name"
+            title="Full Name"
             type="text"
             className="w-full transition duration-200 border-b-2 focus:outline-none focus:border-sky-500 invalid:border-pink-500"
           />
-          <span className="absolute top-0 left-0 transition duration-200 input-text">First Name</span>
+          <span className="absolute top-0 left-0 transition duration-200 input-text">Full Name</span>
           {error.fName && <p style={{ color: "red" }}>{error.fName}</p>}
           </label>
         </div>
-        <div className="px-10 py-5 mx-10 my-5 bg-white border border-black rounded-lg shadow-md shadow-black">
-          <label className=   {`relative ${filled.lName ? "unfilled" : ""}`}> 
-          <input
-            //onChange={handleChange}
-            onChange={(event) => handleChange(event, "lName")}
-            name="lName"
-            title="Last Name"
-            type="text"
-            className="w-full border-b-2 focus:outline-none focus:border-sky-500"
-          />
-          <span className="absolute top-0 left-0 transition duration-200 input-text">Last Name</span>
-          {error.lName && <p style={{ color: "red" }}>{error.lName}</p>}
-          </label>
-        </div>
+         
         <div className="px-10 py-5 mx-10 my-5 bg-white border border-black rounded-lg shadow-md shadow-black">
           <label className=   {`relative ${filled.email ? "unfilled" : ""}`}>
           <input
             //onChange={handleChange}
             onChange={(event) => handleChange(event, "email")}
-            name="email"
+            name="from_email"
             title="Email"
             type="text"
             className="w-full border-b-2 focus:outline-none focus:border-sky-500"
