@@ -4,6 +4,7 @@ import Validation from "./Validation";
 import emailjs from '@emailjs/browser';
 
 function Form() {
+  // State for form fields, filled state, and errors
   const [contact, setContact] = useState({
     fName: "",
     email: "",
@@ -16,10 +17,15 @@ function Form() {
   });
   const [error, setError] = useState({});
 
+  // Ref to access the form DOM element
+  const form = useRef();
+
+  // Function to handle input change in form fields
   function handleChange(event, fieldName) {
     const updatedContact = { ...contact, [fieldName]: event.target.value };
     setContact(updatedContact);
 
+    // Update filled state based on input values
     if (event.target.value.trim() !== '') {
       setFilled(prevState => ({ ...prevState, [fieldName]: true }));
     } else {
@@ -27,35 +33,39 @@ function Form() {
     }
   }
 
+  // Function to handle form validation
   function handleValidation(event) {
     event.preventDefault();
     const validationErrors = Validation(contact);
     setError(validationErrors);
 
+    // Return true if there are no validation errors
     return Object.keys(validationErrors).length === 0;
   }
 
-  const form = useRef();
-
+  // Function to send email using EmailJS
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Validate the form before sending email
     if (!handleValidation(e)) {
       console.log("Validation failed");
       return;
     }
 
-    emailjs.sendForm('service_043pogj', 'template_pv1bpah', form.current, 'llfasA3P2kyVi1tOC')
+    // Send email using EmailJS API
+    emailjs.sendForm( 'service_043pogj', 'template_pv1bpah', form.current, 'llfasA3P2kyVi1tOC')
       .then(
         () => {
           console.log('SUCCESS!');
+          resetForm(); // Reset form fields and state after successful submission
         },
         (error) => {
           console.log('FAILED...', error.text);
         }
       );
   };
-  
+
   // Function to reset form fields and state
   const resetForm = () => {
     setContact({
