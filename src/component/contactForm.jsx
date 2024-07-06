@@ -41,10 +41,11 @@ function Form() {
     e.preventDefault();
 
     if (!handleValidation(e)) {
+      console.log("Validation failed");
       return;
     }
 
-    emailjs.sendForm('  service_043pogj', ' template_yl8vlqs', form.current, 'he7k4upntRG-ks2PZ ')
+    emailjs.sendForm('service_043pogj', 'template_pv1bpah', form.current, 'llfasA3P2kyVi1tOC')
       .then(
         () => {
           console.log('SUCCESS!');
@@ -53,6 +54,21 @@ function Form() {
           console.log('FAILED...', error.text);
         }
       );
+  };
+  
+  // Function to reset form fields and state
+  const resetForm = () => {
+    setContact({
+      fName: "",
+      email: "",
+      message: "",
+    });
+    setFilled({
+      fName: false,
+      email: false,
+      message: false,
+    });
+    form.current.reset(); // Reset the form DOM element
   };
 
   return (

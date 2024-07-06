@@ -68,3 +68,4 @@ function ContactDetail() {
 
 export default ContactDetail;
 //<FontAwesomeIcon icon={faInstagram} size="2x" />
+//'service_043pogj', 'template_pv1bpah', form.current, 'llfasA3P2kyVi1tOC'
