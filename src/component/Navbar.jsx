@@ -104,6 +104,9 @@ const Header = () => {
     {/* Mobile Nav */}
     <nav className={!toggle ? "mobile-nav left-[-100%]" : "mobile-nav left-0"}>
       <ul className="flex flex-col">
+      <li>
+          <Link to="/">Home</Link>
+        </li>
         <li>
           <Link to="/about">About</Link>
         </li>
