@@ -91,3 +91,13 @@ Thumbs.db
 .LSOverride
 
 # macOS
+/node_modules
+
+# This is if we decide to add testing with Jest
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
