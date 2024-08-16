@@ -99,4 +99,6 @@ Thumbs.db
 # misc
 .DS_Store
 node_modules/
+node_modules/.cache/.eslintcache
+
  
