@@ -90,9 +90,6 @@ Thumbs.db
 .AppleDouble
 .LSOverride
 
-# macOS
-/node_modules
-
 # This is if we decide to add testing with Jest
 /coverage
 
@@ -101,3 +98,5 @@ Thumbs.db
 
 # misc
 .DS_Store
+node_modules/
+ 
