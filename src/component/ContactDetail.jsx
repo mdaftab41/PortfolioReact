@@ -16,7 +16,7 @@ function ContactDetail() {
     });
   });
   return (
-    <div className="mx-5">
+    <div className="pt-4 mx-5 md:pt-20">
       <h1 className="font-mono" data-aos="fade-up">
         I am currently open for a fulltime Frontend Developer role. If you want
         to discuss about that feel free to email me or call me.

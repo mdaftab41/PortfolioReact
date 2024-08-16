@@ -107,6 +107,8 @@ const openPdfInNewTab = () => {
           >
             <img
               src={Image}
+              fetchPriority="high"
+              decoding="async"
               alt="coding illustration"
               className="lgw-[80%] ml-auto movearrow w-130 h-120 rounded-sm "
             />

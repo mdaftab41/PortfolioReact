@@ -36,7 +36,7 @@ background:transprent;
 } 
 /*navbar*/
 .mobile-nav {
-  @apply block md:hidden fixed top-0 py-2 w-20 h-full bg-gray-900 duration-500;
+  @apply block md:hidden fixed top-0 py-2 w-24 h-44 bg-gray-900 duration-500;
 } 
 
 nav li {
