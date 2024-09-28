@@ -29,11 +29,11 @@ function Bar() {
         <ProgressBar completed={75} bgColor="red" animateOnRender={true} />
       </div>
       <div className="my-5">
-        <p>Node-js</p>
+        <p>SQL , MySQL</p>
         <ProgressBar completed={50} bgColor="red" animateOnRender={true} />
       </div>
       <div className="my-5">
-        <p>C,C++</p>
+        <p>C , C++</p>
         <ProgressBar completed={80} bgColor="red" animateOnRender={true} />
       </div>
     </div>
