@@ -30,7 +30,7 @@ function About() {
       <p className="mt-3 font-serif" data-aos="fade-up">In backend I know Node.js, Express.js, MongoDB, Database, API and Mongoose</p>
 
       <p className="mt-3 font-serif" data-aos="fade-up">
-      I am pursuing B.Tech from SRM univercity,NCR Delhi. I have always been fascinated by technology and its potential to change the world, 
+      I am pursuing B.Tech from SRM University,NCR Delhi. I have always been fascinated by technology and its potential to change the world, 
       and that's what led me to pursue a career in computer science.
       </p>
       </div>
