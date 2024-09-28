@@ -5,7 +5,7 @@ function Bar() {
   return (
     <div className="">
       <div className="my-5">
-        <p>html</p>
+        <p>HTML</p>
         <ProgressBar completed={80} bgColor="red" animateOnRender={true} />
       </div>
       <div className="my-5">
@@ -13,11 +13,11 @@ function Bar() {
         <ProgressBar completed={70} bgColor="red" animateOnRender={true} />
       </div>
       <div className="my-5">
-        <p>Css</p>
+        <p>CSS</p>
         <ProgressBar completed={75} bgColor="red" animateOnRender={true} />
       </div>
       <div className="my-5">
-        <p>Tailwind css</p>
+        <p>Tailwind CSS</p>
         <ProgressBar completed={50} bgColor="red" animateOnRender={true} />
       </div>
       <div className="my-5">
@@ -25,11 +25,11 @@ function Bar() {
         <ProgressBar completed={70} bgColor="red" animateOnRender={true} />
       </div>
       <div className="my-5">
-        <p>React</p>
+        <p>React-js</p>
         <ProgressBar completed={75} bgColor="red" animateOnRender={true} />
       </div>
       <div className="my-5">
-        <p>node-js</p>
+        <p>Node-js</p>
         <ProgressBar completed={50} bgColor="red" animateOnRender={true} />
       </div>
       <div className="my-5">
