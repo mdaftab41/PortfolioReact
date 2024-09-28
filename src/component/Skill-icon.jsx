@@ -14,11 +14,11 @@ function SkillIcon() {
                 <Tools  source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="The logo icon for GitHub" title="GitHub"/>
                 <Tools  source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="The logo icon for NPM" title="NPM"/>
                 <Tools  source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="The logo icon for NodeJS" title="Node JS"/>
-                <Tools  source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg " alt="The logo icon for NodeJS" title="Javascript"/>
-                <Tools  source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg " alt="The logo icon for NodeJS" title="Bootstrap" className=""/>
-                <Tools  source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg " alt="The logo icon for NodeJS" title="Node JS"/>
-                <Tools  source="https://cdn.icon-icons.com/icons2/2415/PNG/512/cplusplus_original_logo_icon_146581.png " alt="The logo icon for NodeJS" title="Node JS"/>
-                <Tools  source="https://cdn.icon-icons.com/icons2/2415/PNG/512/c_original_logo_icon_146611.png " alt="The logo icon for NodeJS" title="Node JS"/>
+                <Tools  source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg " alt="The logo icon for JavaScript" title="Javascript"/>
+                <Tools  source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg " alt="The logo icon for Bootstrap" title="Bootstrap" className=""/>
+                <Tools  source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg " alt="The logo icon for Python" title="Python"/>
+                <Tools  source="https://cdn.icon-icons.com/icons2/2415/PNG/512/cplusplus_original_logo_icon_146581.png " alt="The logo icon for C++" title="C++"/>
+                <Tools  source="https://cdn.icon-icons.com/icons2/2415/PNG/512/c_original_logo_icon_146611.png " alt="The logo icon for C" title="C"/>
             </div>            
         </div>
     )
